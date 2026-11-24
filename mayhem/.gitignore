@@ -1,0 +1,2 @@
+# Build output of mayhem/build.sh (fuzzers, standalone reproducers, test runners).
+/build/

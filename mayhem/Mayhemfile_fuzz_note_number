@@ -1,0 +1,9 @@
+project: savantenvs/q
+target: fuzz_note_number
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_note_number/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/build/fuzz_note_number
+    libfuzzer: true
+    timeout: 10

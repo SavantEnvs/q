@@ -1,0 +1,9 @@
+project: savantenvs/q
+target: fuzz_dx_sysex
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_dx_sysex/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/build/fuzz_dx_sysex
+    libfuzzer: true
+    timeout: 10
